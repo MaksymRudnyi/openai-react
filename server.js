@@ -7,9 +7,11 @@ dotenv.config();
 
 const app = express();
 
+// eslint-disable-next-line no-undef
 console.log('API_KEY:', process.env.API_KEY);
 
 const openai = new OpenAI({
+  // eslint-disable-next-line no-undef
   apiKey: process.env['API_KEY'], // This is the default and can be omitted
 });
 
